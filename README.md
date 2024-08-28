@@ -1,10 +1,6 @@
 # Zero-Voice: A Low-Resource Approach For Zero-shot Text-to-Speech
 
-This repo holds the codes of paper: "Temporal Perceiver: A General Architecture for Arbitrary Boundary Detection", published in IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI) 2023.
-
-<img src="imgs/image-20230813193016280.png" alt="image-20230813193016280" style="zoom: 50%;" />
-
-[[Paper Link](https://ieeexplore.ieee.org/document/10144649)] 
+This repo holds the codes of paper: "Zero-Voice: A Low-Resource Approach For Zero-shot Text-to-Speech".
 
 ## News
 
@@ -17,6 +13,7 @@ In this paper, we propose  Zero-Voice, a novel zero-shot text-to-speech (TTS) me
 
 ## Hugging Face Space Demo
 
-Zero-Voice Low-Resource Demo [[Link](https://huggingface.co/spaces/zwan074/zero-voice-lr)] 
-
-
+Zero-Voice (Trained on LibriTTS (train-clean-100) subset) [[zero-voice](https://huggingface.co/spaces/zwan074/zero-voice)] 
+Zero-Voice Low-Resource (Trained on 1/8 size of LibriTTS (train-clean-100) subset)  [[zero-voice-lr](https://huggingface.co/spaces/zwan074/zero-voice-lr)] 
+Zero-Voice Te Reo Māori (Trained on 27 hours Te Reo Māori data)  [[zero-voice-te-reo](https://huggingface.co/spaces/zwan074/zero-voice-te-reo)] 
+Te Reo Māori ASR ( Fine-tuning OpenAI Whisper Large-v3 model with 27 hours Te Reo Māori data and 360 hours synthesised data from Zero-Voice Te Reo Māori model)  [[whisper-te-reo]([https://huggingface.co/spaces/zwan074/zero-voice-te-reo](https://huggingface.co/spaces/zwan074/whisper-te-reo))] 
