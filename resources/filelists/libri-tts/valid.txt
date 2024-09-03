@@ -1,0 +1,20 @@
+DUMMY/test-clean/121/121726/121_121726_000000_000000.wav|H|121|DUMMY/test-clean/121/121726/121_121726_000000_000000.wav
+DUMMY/test-clean/121/121726/121_121726_000004_000003.wav|Also, a popular contrivance whereby love making may be suspended but not stopped during the picnic season.|121|DUMMY/test-clean/121/121726/121_121726_000000_000000.wav
+DUMMY/test-clean/121/121726/121_121726_000005_000001.wav|The beggar's plea, the politician's sceptre and the drummer's ablest assistant.|121|DUMMY/test-clean/121/121726/121_121726_000000_000000.wav	
+DUMMY/test-clean/121/121726/121_121726_000007_000003.wav|Painful to hear.|121|DUMMY/test-clean/121/121726/121_121726_000000_000000.wav
+DUMMY/test-clean/121/121726/121_121726_000008_000002.wav|Hence, full of strains.|121|DUMMY/test-clean/121/121726/121_121726_000000_000000.wav
+DUMMY/test-clean/1221/135766/1221_135766_000015_000000.wav|"Child, what art thou?" cried the mother.|1221|DUMMY/test-clean/1221/135766/1221_135766_000015_000000.wav
+DUMMY/test-clean/1221/135766/1221_135766_000025_000001.wav|"I have no Heavenly Father!"|1221|DUMMY/test-clean/1221/135766/1221_135766_000015_000000.wav
+DUMMY/test-clean/1221/135766/1221_135766_000026_000000.wav|"Hush, Pearl, hush!|1221|DUMMY/test-clean/1221/135766/1221_135766_000015_000000.wav
+DUMMY/test-clean/1221/135766/1221_135766_000026_000005.wav|Or, if not, thou strange and elfish child, whence didst thou come?"|1221|DUMMY/test-clean/1221/135766/1221_135766_000015_000000.wav
+DUMMY/test-clean/1221/135766/1221_135766_000027_000002.wav|"It is thou that must tell me!"|1221|DUMMY/test-clean/1221/135766/1221_135766_000015_000000.wav
+DUMMY/test-clean/6930/75918/6930_75918_000000_000001.wav|Night.|6930|DUMMY/test-clean/6930/75918/6930_75918_000000_000001.wav
+DUMMY/test-clean/6930/75918/6930_75918_000001_000000.wav|Concord returned to its place amidst the tents.|6930|DUMMY/test-clean/6930/75918/6930_75918_000000_000001.wav
+DUMMY/test-clean/6930/75918/6930_75918_000004_000000.wav|"Bodily, I suppose?"|6930|DUMMY/test-clean/6930/75918/6930_75918_000000_000001.wav
+DUMMY/test-clean/6930/75918/6930_75918_000017_000000.wav|"One could almost swear to it, to observe him."|6930|DUMMY/test-clean/6930/75918/6930_75918_000000_000001.wav
+DUMMY/test-clean/6930/75918/6930_75918_000050_000001.wav|The count advanced a step towards his friend, and pressed him warmly in his arms.|6930|DUMMY/test-clean/6930/75918/6930_75918_000000_000001.wav
+DUMMY/test-clean/8230/279154/8230_279154_000001_000001.wav|MEMORY|8230|DUMMY/test-clean/8230/279154/8230_279154_000001_000001.wav
+DUMMY/test-clean/8230/279154/8230_279154_000002_000000.wav|Memory, which we are to consider to day, introduces us to knowledge in one of its forms.|8230|DUMMY/test-clean/8230/279154/8230_279154_000001_000001.wav
+DUMMY/test-clean/8230/279154/8230_279154_000004_000003.wav|What sort of evidence is there?|8230|DUMMY/test-clean/8230/279154/8230_279154_000001_000001.wav
+DUMMY/test-clean/8230/279154/8230_279154_000004_000004.wav|And what sort of evidence is logically possible?|8230|DUMMY/test-clean/8230/279154/8230_279154_000001_000001.wav
+DUMMY/test-clean/8230/279154/8230_279154_000008_000001.wav|The behaviourist, who attempts to make psychology a record of behaviour, has to trust his memory in making the record.|8230|DUMMY/test-clean/8230/279154/8230_279154_000001_000001.wav
