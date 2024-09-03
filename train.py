@@ -17,8 +17,8 @@ import sys, json
 sys.path.append('./hifi-gan/')
 from env import AttrDict
 from models import Generator as HiFiGAN
-HIFIGAN_CONFIG = './checkpts/config.json'
-HIFIGAN_CHECKPT = './checkpts/g.pt' 
+HIFIGAN_CONFIG = './hifi-gan/checkpts/config.json'
+HIFIGAN_CHECKPT = './hifi-gan/checkpts/g.pt' 
 
 nsymbols = len(symbols) + 1 if params.add_blank else len(symbols)
 
@@ -67,10 +67,7 @@ if __name__ == "__main__":
                     params.filter_channels, params.filter_channels_dp, 
                     params.n_heads, params.n_enc_layers, params.enc_kernel, params.enc_dropout, params.window_size, 
                     params.n_feats, params.dec_dim, params.beta_min, params.beta_max, params.pe_scale)
-    #'''GradTTSTransE2E,GradTTSVitE2E
     
-    #print('Number of encoder parameters = %.2fm' % (model.encoder.nparams/1e6))
-
     print('Initializing optimizer...')
     optimizer = torch.optim.Adam(params=model.parameters(), lr=params.learning_rate)
 
@@ -97,7 +94,7 @@ if __name__ == "__main__":
     for epoch in range(args.starting_epoch, params.n_epochs + 1):
         model.eval()
         print('Synthesis...')
-        #'''
+
         with torch.no_grad():
             i = 0 
             for item in test_batch:
@@ -128,7 +125,7 @@ if __name__ == "__main__":
                           f'{params.log_dir}/alignment_{i}.png')
 
                 save_plot_f0 (audio.squeeze().cpu(), f'{params.log_dir}/audio_{i}.png')
-        #'''
+
         model.train()
         dur_losses = []
         prior_losses = []
@@ -154,7 +151,6 @@ if __name__ == "__main__":
                 grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1)
                 
                 optimizer.step()
-
                 
                 msg = f'Epoch: {epoch}, iteration: {iteration} | dur_loss: {dur_loss.item()}, prior_loss: {prior_loss.item()}, diff_loss_mel: {diff_loss_mel.item()}, diff_loss_wav: {diff_loss_wav.item()}'
                 progress_bar.set_description(msg)
@@ -164,9 +160,6 @@ if __name__ == "__main__":
                 diff_losses_mel.append(diff_loss_mel.item())
                 diff_losses_wav.append(diff_loss_wav.item())
                 iteration += 1
-
-                #if iteration > 1:
-                #    print(asd)
 
         msg = 'Epoch %d: duration loss = %.5f ' % (epoch, np.mean(dur_losses))
         msg += '| prior loss = %.5f ' % np.mean(prior_losses)
