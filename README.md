@@ -12,12 +12,12 @@ In this paper, we propose Zero-Voice, a novel zero-shot text-to-speech (TTS) met
 (2) To enhance the quality of synthesized audio, we train the Acoustic Feature Refiner and the Waveform Vocoder concurrently using two Diffusion Models respectively. This method enables the Acoustic Feature Refiner to generate mel-spectrograms and the Waveform Vocoder to simultaneously produce high-fidelity audio conditioned on these mel-spectrograms. For English language, we conduct objective experiments under low-resource settings to compare our model with recent strong zero-shot TTS baseline methods under high-resource settings (e.g., StyleTTS 2 and HierSpeech++). Experimental results demonstrate that Zero-Voice achieves comparable performance to these high-resource methods. Notably, Zero-Voice demonstrates strong generalization and robustness even when trained on a very small number of speakers and dataset sizes (i.e., 5-8 hours of transcribed data). Moreover, we collect and label 27 hours Te Reo Māori speech data (i.e., the official and endangered language of New Zealand). We train the Zero-Voice model on this dataset, and use it to synthesize Te Reo Māori speech data to enhance speech recognition models for the language. This approach yields state-of-the-art results for the Māori (nz\_mi) test set of Google Fleurs dataset.
 
 <figure>
-<img src="assets/modeltrainingandinference.svg" alt="modeltrainingandinference" style="zoom: 100%;" />
+<svg viewBox="0 0 400 400" width="400" height="400" src="assets/modeltrainingandinference.svg" alt="modeltrainingandinference" style="zoom: 100%;" />
 <figcaption>Zero-Voice Train (left) and Inference (Right) </figcaption>
 </figure>
 
 <figure>
-<img src="assets/data_preprocessing.svg" alt="/data_preprocessing" style="zoom: 1000%;" />
+<svg viewBox="0 0 400 400" width="400" height="400" src="assets/data_preprocessing.svg" alt="/data_preprocessing" style="zoom: 1000%;" />
 <figcaption>Zero-Voice Source Filter Network </figcaption>
 </figure>
 
