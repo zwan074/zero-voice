@@ -17,12 +17,14 @@ Project demo page is at https://github.com/zwan074/zero-voice/.
 
 <figure>
 <img src="assets/modeltrainingandinference.svg" alt="modeltrainingandinference" style="zoom: 50%;" />
-<figcaption>Zero-Voice Train (left) and Inference (Right) </figcaption>
+<figcaption>In the Training Procedure (a), we jointly train three components: the Acoustic Feature Encoder, the Acoustic Feature Refiner, and the Waveform Vocoder. During the Inference Procedure (b), the Acoustic Feature Encoder processes speech prompts and phonemes to generate the aligned acoustic features, denoted as $\mu_{aligned}$. The Acoustic Feature Refiner then refines these features, reducing noise to produce the predicted mel-spectrogram output, $y_{pred\_mel}$. Finally, the Waveform Vocoder converts $y_{pred\_mel}$ into the final waveform output, $y_{pred\_wave}$. Additionally, Fig. \ref{data_preprocessing} provides detailed information on pipeline of the speech prompts processed by the Source Filter Network within the Acoustic Feature Encoder.</figcaption>
 </figure>
 
 <figure>
-<img viewBox="0 0 400 400" width="400" height="400" src="assets/data_preprocessing.svg" alt="/data_preprocessing" style="zoom: 70%;" />
-<figcaption>Zero-Voice Source Filter Network </figcaption>
+<img src="assets/data_preprocessing.svg" alt="/data_preprocessing" style="zoom: 70%;" />
+<figcaption>\textbf{ Pipeline of Source Filter Network:} (a) 
+During training, the speech prompts $x_{ref\_mel}$, $x_{ref\_pitch}$, and $x_{ref\_energy}$, which represent the mel-spectrograms, pitch, and energy derived from the waveform, undergo a random cut-and-connect process that truncates their time-domain features. These truncated features are stretched or compressed to distort their rhythm, and are then aligned by three encoders: the Mel-Style Encoder, Pitch Encoder and Energy Encoder. Subsequently, elementwise-summation of the outpts from the three encoders, and the Transformer Encoder modules produce $x_{ref}$;
+(b) During inference, the speech prompts $x_{ref\_mel}$, $x_{ref\_pitch}$, and $x_{ref\_energy}$ are directly used as input for the three encoders and the Transformer Encoder to produce $x_{ref}$. </figcaption>
 </figure>
 
 ## Hugging Face Space Demo
