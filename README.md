@@ -21,7 +21,7 @@ Project demo page is at https://github.com/zwan074/zero-voice/.
 </figure>
 
 <figure>
-<img viewBox="0 0 400 400" width="400" height="400" src="assets/data_preprocessing.svg" alt="/data_preprocessing" style="zoom: 50%;" />
+<img viewBox="0 0 400 400" width="400" height="400" src="assets/data_preprocessing.svg" alt="/data_preprocessing" style="zoom: 70%;" />
 <figcaption>Zero-Voice Source Filter Network </figcaption>
 </figure>
 
