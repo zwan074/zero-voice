@@ -185,11 +185,12 @@ def tts_inference (text, mel_, f0_, energy_) :
 
         return audio #'out.wav'
 
+model_ckpt_path = 'logs/zero_voice/grad_16.pt'
+ref_speech_path = '/workspace/dm_datasets/LibriTTS/train-clean-100/7190/90543/7190_90543_000005_000001.wav'
+text = 'What sort of evidence is there?'
 
 nsymbols = len(symbols) + 1 if params.add_blank else len(symbols)
 cmu = cmudict.CMUDict('./resources/cmu_dictionary')
-model_ckpt_path = 'logs/zero_voice/grad_16.pt'
-
 model = ZeroVoiceModel(nsymbols, params.n_enc_channels,
                     params.filter_channels, params.filter_channels_dp, 
                     params.n_heads, params.n_enc_layers, params.enc_kernel, params.enc_dropout, params.window_size, 
@@ -198,8 +199,7 @@ model.load_state_dict(torch.load(model_ckpt_path, map_location=lambda loc, stora
 _ = model.cuda().eval()
 print(f'Number of parameters: {model.nparams}')
 
-ref_speech_path = '/workspace/dm_datasets/LibriTTS/train-clean-100/7190/90543/7190_90543_000005_000001.wav'
 mel, f0, energy = pre_process_f0_energy (ref_speech_path)
-text = 'What sort of evidence is there?'
+
 tts_inference (text, mel, f0, energy)
 
