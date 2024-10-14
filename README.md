@@ -29,6 +29,8 @@ During training, the speech prompts $x_{ref\_mel}$, $x_{ref\_pitch}$, and $x_{re
 
 ## Hugging Face Space Demo
 
+Some key checkpoints in the paper (presented as huggingface space):
+
 - Zero-Voice (Trained on LibriTTS (train-clean-100) subset) [[zero-voice](https://huggingface.co/spaces/zwan074/zero-voice)] 
 - Zero-Voice Low-Resource (Trained on 1/8 size of LibriTTS (train-clean-100) subset)  [[zero-voice-lr](https://huggingface.co/spaces/zwan074/zero-voice-lr)] 
 - Zero-Voice Te Reo Māori (Trained on 27 hours Te Reo Māori data)  [[zero-voice-te-reo](https://huggingface.co/spaces/zwan074/zero-voice-te-reo)] 
@@ -57,7 +59,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
     export CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
     python train.py 
     ```
-4.  You can download Grad-TTS and HiFi-GAN checkpoints trained on LJSpeech* and Libri-TTS datasets (22kHz) from [here](https://drive.google.com/drive/folders/1grsfccJbmEuSBGQExQKr3cVxNV0xEOZ7?usp=sharing).
+4.  You can download  pre-trained HiFi-GAN checkpoints  from [here](https://drive.google.com/drive/folders/1-eEYTB5Av9jNql0WGBlRoi-WH2J7bp5Y).
 5.  During training all logging information and checkpoints are stored in `log_dir`, which you can specify in `params.py` before training.
 
 ## Inference
@@ -65,7 +67,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 1. Set up `model_ckpt_path`, `ref_speech_path`, and `text` in `inference.py` file.
 4. inference:
     ```bash
-    model_ckpt_path = 'logs/zero_voice/grad_16.pt'
+    model_ckpt_path = 'logs/zero_voice/ckpt.pt'
     ref_speech_path = '/workspace/dm_datasets/LibriTTS/train-clean-100/7190/90543/7190_90543_000005_000001.wav'
     text = 'What sort of evidence is there?'
     ```
@@ -76,5 +78,5 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 Some code snipet are from :
 
-Grad-TTS [[Grad-TTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS)] 
-DiffWave [[Grad-TTS](https://github.com/lmnt-com/diffwave)] 
+-Grad-TTS [[Grad-TTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS)] 
+-DiffWave [[Grad-TTS](https://github.com/lmnt-com/diffwave)] 
