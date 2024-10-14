@@ -48,40 +48,28 @@ Secondly, build `monotonic_align` code (Cython):
 cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 ```
 
-## Inference
-
-You can download Grad-TTS and HiFi-GAN checkpoints trained on LJSpeech* and Libri-TTS datasets (22kHz) from [here](https://drive.google.com/drive/folders/1grsfccJbmEuSBGQExQKr3cVxNV0xEOZ7?usp=sharing).
-
-***Note**: we open-source 2 checkpoints of Grad-TTS trained on LJSpeech. They are the same models but trained with different positional encoding scale: **x1** (`"grad-tts-old.pt"`, ICML 2021 sumbission model) and **x1000** (`"grad-tts.pt"`). To use the former set `params.pe_scale=1` and to use the latter set `params.pe_scale=1000`. Libri-TTS checkpoint was trained with scale **x1000**.
-
-Put necessary Grad-TTS and HiFi-GAN checkpoints into `checkpts` folder in root Grad-TTS directory (note: in `inference.py` you can change default HiFi-GAN path).
-
-1. Create text file with sentences you want to synthesize like `resources/filelists/synthesis.txt`.
-2. For single speaker set `params.n_spks=1` and for multispeaker (Libri-TTS) inference set `params.n_spks=247`.
-3. Run script `inference.py` by providing path to the text file, path to the Grad-TTS checkpoint, number of iterations to be used for reverse diffusion (default: 10) and speaker id if you want to perform multispeaker inference:
-    ```bash
-    python inference.py -f <your-text-file> -c <grad-tts-checkpoint> -t <number-of-timesteps> -s <speaker-id-if-multispeaker>
-    ```
-4. Check out folder called `out` for generated audios.
-
-You can also perform *interactive inference* by running Jupyter Notebook `inference.ipynb` or by using our [Google Colab Demo](https://colab.research.google.com/drive/1YNrXtkJQKcYDmIYJeyX8s5eXxB4zgpZI?usp=sharing).
-
 ## Training
 
-1. Make filelists of your audio data like ones included into `resources/filelists` folder. For single speaker training refer to `jspeech` filelists and to `libri-tts` filelists for multispeaker.
+1. Make filelists of your audio data like ones included into `resources/filelists` folder.  
 2. Set experiment configuration in `params.py` file.
 3. Specify your GPU device and run training script:
     ```bash
     export CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
-    python train.py  # if single speaker
-    python train_multi_speaker.py  # if multispeaker
+    python train.py 
     ```
-4. To track your training process run tensorboard server on any available port:
-    ```bash
-    tensorboard --logdir=YOUR_LOG_DIR --port=8888
-    ```
-    During training all logging information and checkpoints are stored in `YOUR_LOG_DIR`, which you can specify in `params.py` before training.
+4.  You can download Grad-TTS and HiFi-GAN checkpoints trained on LJSpeech* and Libri-TTS datasets (22kHz) from [here](https://drive.google.com/drive/folders/1grsfccJbmEuSBGQExQKr3cVxNV0xEOZ7?usp=sharing).
+5.  During training all logging information and checkpoints are stored in `log_dir`, which you can specify in `params.py` before training.
 
+## Inference
+
+1. Set up `model_ckpt_path`, `ref_speech_path`, and `text` in `inference.py` file.
+4. inference:
+    ```bash
+    model_ckpt_path = 'logs/zero_voice/grad_16.pt'
+    ref_speech_path = '/workspace/dm_datasets/LibriTTS/train-clean-100/7190/90543/7190_90543_000005_000001.wav'
+    text = 'What sort of evidence is there?'
+    ```
+5. Check out folder called `out.wav` for generated audios.
 
    
 ## Reference
