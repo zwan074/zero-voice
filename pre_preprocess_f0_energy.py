@@ -14,7 +14,7 @@ if __name__ == "__main__":
                                      params.n_feats, params.sample_rate, params.hop_length, params.win_length, 
                                      params.f_min, params.f_max, pre_process_f0_energy = True)
 
-    batch_collate = VCTKMelRefBatchCollate()
+    batch_collate = ZeroVoiceBatchCollate()
     loader = DataLoader(dataset=train_dataset, batch_size=batch_size,
                         collate_fn=batch_collate, drop_last=False,
                         num_workers=16, shuffle=False)
