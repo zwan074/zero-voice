@@ -76,7 +76,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
    
 ## Reference
 
-Some code snipet are from :
+Some code snippets are from :
 
 1. Grad-TTS [[Grad-TTS](https://github.com/huawei-noah/Speech-Backbones/tree/main/Grad-TTS)] 
 2. DiffWave [[Grad-TTS](https://github.com/lmnt-com/diffwave)] 
