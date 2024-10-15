@@ -52,15 +52,17 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
 
 ## Training
 
-1. Make filelists of your audio data like ones included into `resources/filelists` folder.  
-2. Set experiment configuration in `params.py` file.
-3. Specify your GPU device and run training script:
+1. Make filelists of your training audio data into `resources/filelists` folder.
+2. Use`pre_preprocess_f0_energy.py` to pre-process f0 and energy  
+3. Set experiment configuration in `params.py` file.
+4. letters can be set up in `/text/symbols.py` file, phonemes are set up in `/text/cmudict.py` for English. 
+6. Specify your GPU device and run training script:
     ```bash
     export CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
     python train.py 
     ```
-4.  You can download pre-trained HiFi-GAN checkpoints from [here](https://drive.google.com/drive/folders/1-eEYTB5Av9jNql0WGBlRoi-WH2J7bp5Y), and save under the `/hifi-gan/` to recieve waveform outputs from the acoustic feature refiner during the training.
-5.  During training all logging information and checkpoints are stored in `log_dir`, which you can specify in `params.py` before training.
+7.  You can download pre-trained HiFi-GAN checkpoints from [here](https://drive.google.com/drive/folders/1-eEYTB5Av9jNql0WGBlRoi-WH2J7bp5Y), and save under the `/hifi-gan/` to recieve waveform outputs from the acoustic feature refiner during the training.
+8.  During training all logging information and checkpoints are stored in `log_dir`, which you can specify in `params.py` before training.
 
 ## Inference
 
