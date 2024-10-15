@@ -22,7 +22,7 @@ Project demo page is at https://github.com/zwan074/zero-voice/.
 
 <figure>
 <img src="assets/data_preprocessing.svg" alt="/data_preprocessing" style="zoom: 70%;" />
-<figcaption>\textbf{ Pipeline of Source Filter Network:} (a) 
+<figcaption>\textbf{Pipeline of Source Filter Network:} (a) 
 During training, the speech prompts $x_{ref\_mel}$, $x_{ref\_pitch}$, and $x_{ref\_energy}$, which represent the mel-spectrograms, pitch, and energy derived from the waveform, undergo a random cut-and-connect process that truncates their time-domain features. These truncated features are stretched or compressed to distort their rhythm, and are then aligned by three encoders: the Mel-Style Encoder, Pitch Encoder and Energy Encoder. Subsequently, elementwise-summation of the outpts from the three encoders, and the Transformer Encoder modules produce $x_{ref}$;
 (b) During inference, the speech prompts $x_{ref\_mel}$, $x_{ref\_pitch}$, and $x_{ref\_energy}$ are directly used as input for the three encoders and the Transformer Encoder to produce $x_{ref}$. </figcaption>
 </figure>
@@ -59,7 +59,7 @@ cd model/monotonic_align; python setup.py build_ext --inplace; cd ../..
     export CUDA_VISIBLE_DEVICES=YOUR_GPU_ID
     python train.py 
     ```
-4.  You can download  pre-trained HiFi-GAN checkpoints  from [here](https://drive.google.com/drive/folders/1-eEYTB5Av9jNql0WGBlRoi-WH2J7bp5Y).
+4.  You can download pre-trained HiFi-GAN checkpoints from [here](https://drive.google.com/drive/folders/1-eEYTB5Av9jNql0WGBlRoi-WH2J7bp5Y), and save under the `/hifi-gan/` to recieve waveform outputs from the acoustic feature refiner during the training.
 5.  During training all logging information and checkpoints are stored in `log_dir`, which you can specify in `params.py` before training.
 
 ## Inference
