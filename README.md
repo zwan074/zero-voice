@@ -1,6 +1,7 @@
 # Zero-Voice: A Low-Resource Approach For Zero-shot Text-to-Speech
 
 This repo holds the codes of paper: "Zero-Voice: A Low-Resource Approach For Zero-shot Text-to-Speech".
+https://doi.org/10.36227/techrxiv.173750018.83521236/v1
 
 ## News
 
