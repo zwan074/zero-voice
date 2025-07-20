@@ -40,8 +40,7 @@ Some key checkpoints in the paper (presented as huggingface space):
 
 ## Te Reo Māori Synthetic Speech Samples
 
-[[Synthesized Māori Speech]([https://huggingface.co/spaces/zwan074/zero-voice](https://drive.google.com/drive/folders/1xAimbNIDO9dP1aePiEhwYoBgsB5077bU?usp=drive_link
-))] 
+[[Synthesized Māori Speech]([https://huggingface.co/spaces/zwan074/zero-voice](https://drive.google.com/drive/folders/1xAimbNIDO9dP1aePiEhwYoBgsB5077bU?usp=drive_link)] 
 
 ## Installation
 
