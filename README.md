@@ -6,6 +6,7 @@ https://doi.org/10.36227/techrxiv.173750018.83521236/v1
 ## News
 
 **[Aug. 29, 2024]** We release the Demos for Zero-Voice on LibriTTS (train-clean-100) and Te Reo Maori;  ASR on Te Reo Maori.
+**[July. 21, 2025]** We release Synthetic Te Reo Māori Speech Samples for the paper.
 
 ## Overview
 
@@ -36,6 +37,11 @@ Some key checkpoints in the paper (presented as huggingface space):
 2. Zero-Voice Low-Resource (Trained on 1/8 size of LibriTTS (train-clean-100) subset)  [[zero-voice-lr](https://huggingface.co/spaces/zwan074/zero-voice-lr)] 
 3. Zero-Voice Te Reo Māori (Trained on 27 hours Te Reo Māori data)  [[zero-voice-te-reo](https://huggingface.co/spaces/zwan074/zero-voice-te-reo)] 
 4. Te Reo Māori ASR ( Fine-tuning OpenAI Whisper Large-v3 model with 27 hours Te Reo Māori data and 360 hours synthesised data from Zero-Voice Te Reo Māori model)  [[whisper-te-reo](https://huggingface.co/spaces/zwan074/whisper-te-reo)]
+
+## Te Reo Māori Synthetic Speech Samples
+
+[[Synthesized Māori Speech]([https://huggingface.co/spaces/zwan074/zero-voice](https://drive.google.com/drive/folders/1xAimbNIDO9dP1aePiEhwYoBgsB5077bU?usp=drive_link
+))] 
 
 ## Installation
 
