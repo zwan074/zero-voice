@@ -6,6 +6,7 @@ https://doi.org/10.36227/techrxiv.173750018.83521236/v1
 ## News
 
 **[Aug. 29, 2024]** We release the Demos for Zero-Voice on LibriTTS (train-clean-100) and Te Reo Maori;  ASR on Te Reo Maori.
+
 **[July. 21, 2025]** We release Synthetic Te Reo Māori Speech Samples for the paper.
 
 ## Overview
