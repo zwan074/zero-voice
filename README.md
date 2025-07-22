@@ -41,7 +41,7 @@ Some key checkpoints in the paper (presented as huggingface space):
 
 ## Te Reo Māori Synthetic Speech Samples
 
-[[Synthesized Māori Speech](https://drive.google.com/drive/folders/1xAimbNIDO9dP1aePiEhwYoBgsB5077bU?usp=drive_link)] 
+[[Synthesized Māori Speech](https://drive.google.com/drive/folders/1xAimbNIDO9dP1aePiEhwYoBgsB5077bU?usp=drive_link)], partial samples for fintuning the whisper-large-v3 model in the paper.
 
 ## Installation
 
