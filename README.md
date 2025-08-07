@@ -35,6 +35,14 @@ During training, the speech prompts $x_{ref\_mel}$, $x_{ref\_pitch}$, and $x_{re
 
 [[Synthesized Māori Speech](https://drive.google.com/drive/folders/1xAimbNIDO9dP1aePiEhwYoBgsB5077bU?usp=drive_link)], partial samples for fintuning the whisper-large-v3 model in the paper.
 
+
+## Hugging Face Space Demo
+
+Some key checkpoints in the paper (presented as huggingface space):
+
+1. Zero-Voice (Trained on LibriTTS (train-clean-100) subset) [[zero-voice](https://huggingface.co/spaces/zwan074/zero-voice)] 
+2. Zero-Voice Low-Resource (Trained on 1/8 size of LibriTTS (train-clean-100) subset)  [[zero-voice-lr](https://huggingface.co/spaces/zwan074/zero-voice-lr)]
+3. 
 ## Installation
 
 Firstly, install all Python package requirements:
