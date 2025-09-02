@@ -7,7 +7,11 @@ https://doi.org/10.36227/techrxiv.173750018.83521236/v1
 
 **[Aug. 29, 2024]** We release the Demos for Zero-Voice on LibriTTS (train-clean-100) and Te Reo Maori;  ASR on Te Reo Maori.
 
-**[July. 21, 2025]** We release Synthetic Te Reo Māori Speech Samples for the paper.
+**[Jul. 21, 2025]** We release Synthetic Te Reo Māori Speech Samples for the paper.
+
+**[Sep. 3, 2025]** We note a domain mismatch issue for the synthetic speech data from the Zero-Voice approach, we propose a novel approach to address this issue
+[[Score-Distribution-Matching](https://github.com/zwan074/score-distribution-matching)].
+
 
 ## Overview
 
