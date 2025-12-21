@@ -45,7 +45,7 @@ Some key checkpoints in the paper (presented as huggingface space):
 
 1. Zero-Voice (Trained on LibriTTS (train-clean-100) subset) [[zero-voice](https://huggingface.co/spaces/zwan074/zero-voice)] 
 2. Zero-Voice Low-Resource (Trained on 1/8 size of LibriTTS (train-clean-100) subset)  [[zero-voice-lr](https://huggingface.co/spaces/zwan074/zero-voice-lr)]
-3. Te Rea ASR checkpoint  [[te-reo-asr]([(https://huggingface.co/spaces/zwan074/whisper-te-reo))]]
+3. Te Rea ASR checkpoint  [[te-reo-asr]((https://huggingface.co/spaces/zwan074/whisper-te-reo)]
 ## Installation
 
 Firstly, install all Python package requirements:
